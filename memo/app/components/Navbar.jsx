@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className='flex flex-row py-8 px-32 justify-between items-center fixed top-0 w-full backdrop-blur-md'>
       <div>
-        <a href="#"><img src="Logo.png" className='w-40' alt="" /></a>
+        <a href="#Hero" onClick={handleScroll}><img src="Logo.png" className='w-40' alt="" /></a>
       </div>
       <div>
         <ul className='flex space-x-10 text-memop'>
@@ -25,9 +25,11 @@ const Navbar = () => {
             <li className='cursor-pointer hover:underline transition-all underline-offset-8 hover:text-memob'>what is memo</li>
           </a>
           <a href="#features" onClick={handleScroll}>
-          <li className='cursor-pointer hover:underline transition-all underline-offset-8 hover:text-memob'>features</li>
+            <li className='cursor-pointer hover:underline transition-all underline-offset-8 hover:text-memob'>features</li>
           </a>
-          <li className='cursor-pointer hover:underline transition-all underline-offset-8 hover:text-memob'>meet the founders</li>
+          <a href="#founders" onClick={handleScroll}>
+            <li className='cursor-pointer hover:underline transition-all underline-offset-8 hover:text-memob'>meet the founders</li>
+          </a>
         </ul>
       </div>
       <div className=''>
