@@ -11,6 +11,9 @@ export default {
         memop: '#7D17BA',
         memob: '#4C69FB'
       },
+      fontFamily: {
+        poppins: "var(--font-poppins), sans-serif",
+      },
     },
   },
   plugins: [],

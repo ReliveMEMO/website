@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex flex-row py-8 px-24 justify-between items-center fixed top-0 w-full backdrop-blur-md'>
+    <div className='flex flex-row py-8 px-32 justify-between items-center fixed top-0 w-full backdrop-blur-md'>
       <div>
         <a href="#"><img src="Logo.png" className='w-40' alt="" /></a>
       </div>

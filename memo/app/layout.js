@@ -1,14 +1,16 @@
-import { Geist, Comfortaa } from "next/font/google";
+import { Geist, Comfortaa, Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const comfortaa = Comfortaa({
   variable: "Comfortaa",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // Choose weights you need
+  variable: "--font-poppins", // Define a CSS variable
 });
 
 export const metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${comfortaa.variable} antialiased`}
+        className={` ${comfortaa.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>
