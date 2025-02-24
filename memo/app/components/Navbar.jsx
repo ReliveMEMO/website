@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex flex-row py-8 px-32 justify-between items-center fixed top-0 w-full backdrop-blur-md'>
+    <div className='flex flex-row py-8 px-32 justify-between items-center fixed top-0 w-full backdrop-blur-md z-40 bg-white/70'>
       <div>
         <a href="#Hero" onClick={handleScroll}><img src="Logo.png" className='w-40' alt="" /></a>
       </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className=''>
-        <a href="#" className='text-memop border-memop border-2 py-3 px-10 rounded-full hover:bg-memop hover:text-white hover:shadow-lg shadow-memop transition-all'>Join the waitlist</a>
+        <a href="https://forms.gle/P98oou8ZZXNRRBwh9" target='_blank' className='text-memop border-memop border-2 py-3 px-10 rounded-full hover:bg-memop hover:text-white hover:shadow-lg shadow-memop transition-all'>Join the waitlist</a>
       </div>
     </div>
   )
