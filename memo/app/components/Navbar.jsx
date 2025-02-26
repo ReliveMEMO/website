@@ -44,7 +44,9 @@ const Navbar = () => {
       <div className='z-50 lg:hidden fixed top-8 right-5 text-memop'>
         <AlignRight onClick={() => setNavBar(!navBar)}/>
       </div>
-      <div className={`bg-white w-screen h-screen items-center justify-center text-center flex flex-col text-white space-y-20 ${navBar ? 'translate-x-0' : 'translate-x-full hidden'} lg:hidden transition-all`}>
+
+
+      <div className={` fixed z-40 bg-white w-screen h-screen items-center justify-center text-center flex flex-col text-white space-y-20 ${navBar ? 'translate-x-0' : 'translate-x-full'} lg:hidden transition-all`}>
         <div >
           <a href="#Hero" onClick={handleScroll}><img src="Logo.png" className='w-40' alt="" /></a>
         </div>
