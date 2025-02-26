@@ -1,5 +1,6 @@
 import { Geist, Comfortaa, Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const comfortaa = Comfortaa({
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         className={` ${comfortaa.variable} ${poppins.variable} antialiased`}
       >
         {children}
+        <Analytics/>
       </body>
     </html>
   );
